@@ -5,12 +5,12 @@ require_relative 'lib/smart_routing/v1'
 require_relative 'lib/smart_routing/v2'
 
 Gem::Specification.new do |spec|
-  spec.name        = 'smart_routing'
+  spec.name        = 'smart_routing_client'
   spec.version     = SmartRouting::VERSION
   spec.required_ruby_version = '>= 2.3.0'
   spec.authors     = ['Andrey Eremeev']
   spec.email       = ['andrey@hexopay.com']
-  spec.homepage    = 'https://github.com/hexopay/smart_routing'
+  spec.homepage    = 'https://github.com/hexopay/smart_routing_client'
   spec.summary     = 'Implement Smart Routing to get gataway'
   spec.description = 'Implement Smart Routing to get gataway'
   spec.license     = 'MIT'
