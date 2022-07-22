@@ -1,0 +1,19 @@
+defaults: &defaults
+  smart_routing:
+    api:
+      url:      '<%= ENV['SMART_ROUTING_API_URL'] || 'http://localhost:4000' %>'
+      login:    '<%= ENV['SMART_ROUTING_API_LOGIN'] || 'smart_routing_login' %>'
+      password: '<%= ENV['SMART_ROUTING_API_PASSWORD'] || 'smart_routing_password' %>'
+  ecp_rules:
+    filtered_bins: ['420000', '535761', '533317', '402360', '526736', '532131', '535518', '537572', '416598', '522701', '535570']
+development:
+  <<: *defaults
+
+staging:
+  <<: *defaults
+
+production:
+  <<: *defaults
+
+test: &test
+  <<: *defaults
