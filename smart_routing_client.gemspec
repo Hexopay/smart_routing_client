@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 #
-require_relative 'lib/smart_routing/version'
-require_relative 'lib/smart_routing/v1'
-require_relative 'lib/smart_routing/v2'
 
 Gem::Specification.new do |spec|
   spec.name        = 'smart_routing_client'
